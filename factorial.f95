@@ -36,7 +36,8 @@ program factorial
             do i = 1, n-1
                 n = n * i
             end do
-            print *, n
+            write(bigarse, '(I50)') n
+            print *, "Result: ", trim(adjustl(bigarse))
         end if
     end if
 
